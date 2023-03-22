@@ -1,0 +1,268 @@
+@media (max-width:600px){ 
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: sans-serif;
+        
+        
+        
+
+    }
+
+    .menu-bar{
+
+
+        /* let us create the top menu styles */
+        /* height: 50px;
+        width: 100%; */
+        padding: 0 10px 0 0px  ;
+        height: 45px;
+        width: 100%;
+        background-color:rgb(0, 0, 0);
+         justify-content: space-between; 
+        align-items: center;
+        display: flex;
+
+
+
+
+
+
+
+    }
+    .floatr8{
+        align-items: center;
+        display: flex;
+
+
+    }
+    /* desing a hamburgur icon that 3 lines */
+    .hamburgur-menu{
+        height: 30px;
+        width: 30px;
+        
+        position: relative;
+        
+
+    }
+
+    .ham-burgur{
+        width: 77%;
+        height: 10%;
+        background-color: #fff;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: transform .6s opacity .8s,top .6s;
+
+    }
+
+    .top{
+        top: 25%;
+
+    }
+
+    .bottom{
+        top: 75%;
+
+    }
+    /* -------------------------------------------------- */
+    /*END  desing hamburgur menu 3 lines cpmleted  */
+
+
+    /* START on click menu change to cross making  */
+    .hamburgur-menu.active .top{
+        transform:translate(-50%,-50%) rotate(-315deg);
+        top: 50%;
+
+    }
+
+    .hamburgur-menu.active .mid{
+        opacity: 0;
+
+    }
+
+    .hamburgur-menu.active .bottom{
+        transform:translate(-50%,-50%) rotate(-225deg);
+        top: 50%;
+
+    }
+    /* -------------------------------------------------- */
+     /* END OF  on click menu change to cross making  */
+
+
+     /* START of offscreen menu on clciking the hamburgurmenu  */
+    .off-screen-menu{
+       
+        top: 45px;
+        position:absolute ;
+        background-color: #ccc7c7;
+        
+        
+        opacity: .87;
+        transition:left .5s;
+
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        align-items:end;
+        
+        display: none;
+        
+        
+    }
+
+    
+
+    .off-screen-menu.active{
+        
+        display: block;
+        position: absolute;
+    }
+
+
+
+
+
+    /* end of off-screeen meun creation */
+     /* --------------------------------------------------------- */
+
+
+/* menu items ------------------------- */
+.off-screen-menu ul{
+    width: 100%;
+    list-style: none;
+
+
+}
+.off-screen-menu ul li{
+    padding: 10px 86px 10px 20px ;
+    
+    background-color: #2a2222;
+    opacity: .8;
+    
+
+
+    
+}
+.off-screen-menu ul li:hover {
+    background-color: #b2b2b2;
+    opacity: .8;
+}
+.off-screen-menu ul li:hover a{
+    color: rgb(27, 27, 246);
+    
+    
+}
+.off-screen-menu ul li a{
+    text-decoration: none;
+    font-weight:300;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: all 0.3s;
+    color: azure;
+}
+
+  /* menu items closing ------------------------------------- */
+    .menu-bar .home h1{
+        padding-left:7px ;
+        text-transform: uppercase;
+        font-size: 15px;
+        color: aliceblue;
+
+    }
+    /* hi this is logo editing */
+    .logo h2{
+        text-transform: uppercase;
+        color: #bc1f1f;
+        font-size: 22px;
+       
+    }
+    .logo h2 span{
+        color: rgb(236, 241, 241);
+        
+       
+            /* Change this value to adjust the spacing */
+          
+    }
+    /* collage logo */
+    .clg-logo{
+        z-index: 4;
+
+    }
+    .clg-logo img {
+        width: 320px;
+        height: 320px;
+        
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: fixed;
+        z-index: 1;
+        opacity:.1 ;
+       
+        
+
+       
+
+    }
+    table{
+        z-index: 2;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        color: rgb(26, 25, 25);
+        border-spacing: 2px;
+        background-color: rgba(162, 217, 217,.2) ;
+        
+        
+        
+        
+        border-collapse: separate;
+        
+        
+        
+       
+
+    }
+    table tr{
+        
+        
+        
+        font-size: 15px;
+        text-transform: uppercase;
+        
+
+    }
+    
+    th,td{
+       
+        padding: 12px;
+    }
+
+    .table h3{
+        font-size: 14px;
+        text-transform: uppercase;
+        
+        text-align: center;
+        
+       
+    }
+
+
+    
+
+
+
+
+    /* hello we are now going to create the  */
+    
+}
